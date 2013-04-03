@@ -329,6 +329,7 @@ a.block-heading:hover,
 }
 .sidebar-nav .nav-header .icon-chevron-up {
   float: right;
+  margin-top: 0.6em;
 }
 .sidebar-nav .nav-header .label {
   float: right;
