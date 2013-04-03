@@ -57,7 +57,7 @@ $f3->route('GET /',
 				array('dom','xmlrpc')
 		);
 		$f3->set('classes',$classes);
-		echo View::instance()->render('welcome.htm');
+		echo View::instance()->render('index.htm');
 	}
 );
 
