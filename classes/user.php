@@ -3,18 +3,7 @@ class User extends Controller{
 	function beforeroute() {
 	}
 	function login() {
-		$f3=$this->f3;
-		/* Uncomment if desired
-		$loc=Web\Geo::instance()->location();
-		if (isset($loc['continent_code']) && $loc['continent_code']=='EU')
-			$f3->set('message',
-				'The administrator pages of this Web site uses cookies for '.
-				'identification and security. Without these cookies, these '.
-				'pages would simply be inaccessible. By using these pages '.
-				'you agree to this safety measure.');
-		*/
-		$f3->set('COOKIE.sent',TRUE);
-		$f3->set('inc','login.htm');
+		$this->html = 'login';
 	}
 
 	//! Process login form

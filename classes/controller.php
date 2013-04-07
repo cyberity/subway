@@ -16,6 +16,10 @@ class Controller {
 		// Update session data
 		$f3->set('SESSION.lastseen',time());
 	}
+	function afterroute() {
+		// Render HTML layout
+		echo Template::instance()->render($this->html.'.html');
+	}
 	function __construct() {
 		$f3=Base::instance();
 		// Connect to the database
