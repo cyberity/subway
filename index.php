@@ -18,7 +18,7 @@ $f3->route('GET /userref',
 	}
 );
 
-$f3->route('GET /signin',
+$f3->route('GET /login',
 	function($f3) {
 		$f3->set('sidebar','');
         $template=new Template;

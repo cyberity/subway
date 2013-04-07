@@ -5,12 +5,12 @@
         <div class="block">
             <p class="block-heading">Sign In</p>
             <div class="block-body">
-                <form>
+                <form method='POST'>
                     <label>Username</label>
-                    <input type="text" class="span12">
+                    <input name="user" type="text" class="span12">
                     <label>Password</label>
-                    <input type="password" class="span12">
-                    <a href="index" class="btn btn-primary pull-right">Sign In</a>
+                    <input name="password" type="password" class="span12">
+                    <a href="#" class="btn btn-primary pull-right" onclick="javascript:$('form').submit();return false;" >Sign In</a>
                     <label class="remember-me"><input type="checkbox"> Remember me</label>
                     <div class="clearfix"></div>
                 </form>
