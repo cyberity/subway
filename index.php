@@ -57,7 +57,9 @@ $f3->route('GET /',
 				array('dom','xmlrpc')
 		);
 		$f3->set('classes',$classes);
-		echo View::instance()->render('index.html');
+		$f3->set('sidebar','index');
+		$template=new Template;
+        echo $template->render('index.html');
 	}
 );
 
@@ -68,8 +70,10 @@ $f3->route('GET /userref',
 );
 
 $f3->route('GET /signin',
-	function() {
-		echo View::instance()->render('signin.htm');
+	function($f3) {
+		$f3->set('sidebar','');
+        $template=new Template;
+        echo $template->render('signin.html');
 	}
 );
 

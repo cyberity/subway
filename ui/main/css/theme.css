@@ -753,3 +753,13 @@ table.table.list tr:first-child td {
     font-size: .5em;
   }
 }
+
+.brand { font-family: georgia, serif; }
+.brand .first {
+	color: #ccc;
+	font-style: italic;
+}
+.brand .second {
+	color: #fff;
+	font-weight: bold;
+}
